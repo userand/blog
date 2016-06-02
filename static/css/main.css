@@ -41,7 +41,7 @@ ul li {
 	color: #fff;
 	display: block;
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 16px;
 	-webkit-transition: color .2s cubic-bezier(.4, .01, .165, .99);
 	transition: color .2s cubic-bezier(.4, .01, .165, .99);
 }
