@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 我的Blog
+title: 小女子好养
 ---
 <!doctype html>
 <html lang="en">
@@ -30,7 +30,7 @@ title: 我的Blog
 
 		<div class="container">
 
-			<ul>
+			<ul class="post-list">
 				{% for post in site.posts %}
 				<li class="page-header">{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 				{% endfor %}

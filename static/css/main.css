@@ -49,3 +49,8 @@ ul li {
 	background: #f49484;
 	color: #fff;
 }
+.post-list li a{
+	font-size: 18px;
+	padding-left: 20px;
+	font-weight: 200;
+}
