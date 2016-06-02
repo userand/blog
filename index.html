@@ -3,13 +3,45 @@ ayout: default
 title: 我的Blog
 ---
 
-<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css"/>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css"/>
+</head>
+<body>
+	
+<div class="container-fluid">
+	<div class="row">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">
+		        	blog
+		      </a>
+				<ul class="nav navbar-nav">
+		            <li class="active"><a href="#">首页</a></li>
+		            <li><a href="#">Link</a></li>
+		            <li><a href="#">Link</a></li>
+		          </ul>		      
+		    </div>
+		  </div>
+		</nav>
+	</div>
+	
+</div>
 
+
+<div class="container">
 <h2>{{ page.title }}</h2>
-<p>最新文章</p>
+<p class="page_header">最新文章</p>
 <ul>
 　　{% for post in site.posts %}
 　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　		<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　{% endfor %}
 </ul>
+</div>	
+</body>
+</html>
